@@ -4,9 +4,29 @@
 #+EMAIL: earneson@arnesonium.com
 #+SETUPFILE: include/setup.org
 
-* TODO Step 1: Install Compass
+* Step 1: Install Compass
 
-* Step 2: Configure Elisp Snippet
+  Follow the installation directions from [[http://compass-style.org/][the Compass website]]. Note that Compass relies on Ruby, but
+  it compiles CSS files in a way that makes life easier.
+
+* Step 2: Copy this repository
+
+  Make a copy of this repository and use that as the basis for your website project. This repository
+  has everything you need to get started, including a framework for a Compass project with
+  *org-mode* HTML styles.
+
+  You will want to run =compass watch= in the =assets/= directory. This will generate your initial
+  stylesheets and regenerate them every time you make changes.
+
+* Step 3: Customize the setup
+
+  1. Open [[file:include/setup.org]] and set some reasonable defaults. In particular, note the custom
+     fonts being loaded.
+  2. Edit [[file:assets/sass/variables.scss]] to set up your colors, basic fonts, and other elements.
+  3. Edit [[file:assets/sass/breakpoints/_base.scss]] to configure the basic CSS building blocks for
+     your website.
+
+* Step 4: Configure Org-Export Projects
 
   Add the following code to your *org-mode* initialization. Make sure to set =yourwebsite-base-dir=
   to the project directory for your raw org-mode files and =yourwebsite-publish-dir= to the location
@@ -41,3 +61,6 @@
             ("yourwebsite"
              :components ("yourwebsite.example" "yourwebsite.static"))))
   #+end_src
+
+  You can now export everything as a project.
+
