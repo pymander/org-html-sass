@@ -1,0 +1,43 @@
+#+TITLE: Org-mode HTML Export with Compass/Sass
+#+LANGUAGE: en
+#+AUTHOR: Erik L. Arneson
+#+EMAIL: earneson@arnesonium.com
+#+SETUPFILE: include/setup.org
+
+* TODO Step 1: Install Compass
+
+* Step 2: Configure Elisp Snippet
+
+  Add the following code to your *org-mode* initialization. Make sure to set =yourwebsite-base-dir=
+  to the project directory for your raw org-mode files and =yourwebsite-publish-dir= to the location
+  your static website will be generated.
+
+  #+begin_src elisp
+    (setq yourwebsite-base-dir "PATH/TO/BASE/DIRECTORY"
+          yourwebsite-publish-dir "PATH/TO/PUBLISHING/DIRECTORY")
+
+    (setq org-publish-project-alist
+          '(("yourwebsite.example"
+             :base-directory yourwebsite-base-dir
+             :base-extension "org"
+             :exclude "include"
+             :publishing-directory "PATH/TO/PUBLISHING/DIRECTORY"
+             :publishing-function org-html-publish-to-html
+             :auto-sitemap t
+             :sitemap-filename "sitemap.org"
+             :sitemap-title "Your Website Sitemap"
+             :auto-index t
+             :table-of-contents t
+             :recursive t
+             :publishing-url "https://yourwebsite.example/")
+            ("yourwebsite.static"
+             :base-directory yourwebsite-base-dir
+             :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
+             :include (".htaccess")
+             :publishing-function org-publish-attachment
+             :publishing-directory yourwebsite-publish-dir
+             :auto-sitemap nil
+             :recursive t)
+            ("yourwebsite"
+             :components ("yourwebsite.example" "yourwebsite.static"))))
+  #+end_src

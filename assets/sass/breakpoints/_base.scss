@@ -1,0 +1,153 @@
+html { 
+    font-family: "Bitstream Vera Sans", Verdana, sans-serif; 
+    font-size: 12pt; 
+}
+
+body {
+   padding: {
+      left: 1%;
+      right: 1%;
+   }
+
+   margin: 0px;
+
+   color: #000;
+   background: #99F none repeat scroll 0 0;
+}
+
+header {
+   h1 {
+      padding: {
+         top: 1%;
+         bottom: 1%;
+      }
+      font-family: 'Alegreya SC', serif;
+   }
+}
+
+div#content {
+   background: #fff;
+
+   margin: 0;
+   padding: {
+      top: 1em;
+      left: 2em;
+      right: 2em;
+      bottom: 2em;
+   }
+}
+
+div {
+   p:first-child {
+      margin-top: 0.125em;
+   }
+}
+
+
+/* Fancy underlines. */
+h2 {
+   padding-bottom: 4px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   border-bottom: thin dotted #99F;
+   font-family: 'Alegreya SC', serif;
+}
+
+h3 {
+   font-family: 'Alegreya SC', serif;
+   margin: {
+      bottom: 1px;
+   }
+}
+
+h4 {
+   font-family: 'Alegreya SC', serif;
+   font-size: 1.18em;
+   margin: {
+      bottom: 1px;
+   }
+}
+
+p.author 
+p.date
+p.creator {
+    padding: 0em;
+}
+
+.title  { text-align: center; }
+.todo   { color: red; }
+.done   { color: green; }
+.tag    { background-color: #add8e6; font-weight:normal }
+.target { }
+.timestamp { color: #bebebe; }
+.timestamp-kwd { color: #5f9ea0; }
+p.verse { margin-left: 3% }
+pre {
+    border: 1pt solid #AEBDCC;
+    background-color: #F3F5F7;
+    padding: 5pt;
+    font-family: courier, monospace;
+    font-size: 90%;
+    overflow:auto;
+}
+table { border-collapse: collapse; }
+td, th { vertical-align: top; }
+dt { font-weight: bold; }
+div.figure { padding: 0.5em; }
+div.figure p { text-align: center; }
+textarea { overflow-x: auto; }
+.linenr { font-size:smaller }
+.code-highlighted {background-color:#ffff00;}
+.org-info-js_info-navigation { border-style:none; }
+#org-info-js_console-label { font-size:10px; font-weight:bold;
+                             white-space:nowrap; }
+.org-info-js_search-highlight { 
+    background-color:#ffff00;
+    color:#000000;
+    font-weight:bold; 
+}
+
+/* Our logo and menu div. */
+#tm-logo {
+   text-align: center;
+   width: 100%;
+}
+
+#table-of-contents {
+   display: none;
+}
+
+#table-of-contents h2 {
+    color: black;
+    border-bottom: none;
+}
+
+#footnotes { font-size: 0.9em; }
+#text-footnotes p { margin: 0em; }
+
+#postamble { 
+    font-size: 0.8em; 
+}
+
+#postamble p { 
+    margin: 0em;
+    color: gray;
+    text-align: right; 
+}
+
+#leftfoot p {
+   color: gray;
+   text-align: left;
+}
+
+div#banners {
+    text-align: center;
+}
+
+div#subbox {
+    text-align: center;
+    float: right;
+    border: 1px solid #99C;
+}
+
+/* Add custom styles after this line. */
