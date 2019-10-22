@@ -2,7 +2,7 @@
 #+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:nil *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:nil
 #+EXPORT_EXCLUDE_TAGS: noexport
-#+HTML_HEAD: <link href='https://fonts.googleapis.com/css?family=Alegreya+SC:400,700' rel='stylesheet' type='text/css'>
+#+HTML_HEAD: <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
 #+HTML_HEAD: <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
 #+HTML_HEAD: <link href="assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 #+HTML_HEAD: <link href="assets/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />

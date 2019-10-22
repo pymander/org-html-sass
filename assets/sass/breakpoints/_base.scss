@@ -21,7 +21,7 @@ header {
          top: 1%;
          bottom: 1%;
       }
-      font-family: $alegreya;
+      font-family: $serif;
    }
 }
 
@@ -50,18 +50,18 @@ h2 {
    margin-top: 5px;
    margin-bottom: 5px;
    border-bottom: thin dotted #99F;
-   font-family: $alegreya;
+   font-family: $serif;
 }
 
 h3 {
-    font-family: $alegreya;
+    font-family: $serif;
     margin: {
         bottom: 1px;
     }
 }
 
 h4 {
-    font-family: $alegreya;
+    font-family: $serif;
     font-size: 1.18em;
     margin: {
         bottom: 1px;
@@ -111,12 +111,12 @@ pre {
     border: 1pt solid $border-color;
     background-color: $light-gray;
     padding: 5pt;
-    font-family: $hack;
+    font-family: $fixed;
     font-size: 90%;
     overflow:auto;
 }
 code {
-    font-family: $hack;
+    font-family: $fixed;
     font-size: 90%;
     hyphens: none;
     color: darken($text-color, 10%);

@@ -2,14 +2,14 @@
  * Configurable variables for the Sass templates. This includes colors, fonts, typesetting, and other issues.
  */
 
+// Imported fonts from setup.org
+$notoserif:          "Noto Serif TC";
+$hack:              "Hack";
+
 // Default font choices for sans and serif
 $sans-serif:        "Bitstream Vera Sans", Verdana, sans-serif; 
-$serif:             "Georgia", Times New Roman, Times, serif;
-$fixed:             "Courier New", monospace;
-
-// Imported fonts from setup.org
-$alegreya:          "Alegreya SC", $serif;
-$hack:              "Hack", $fixed;
+$serif:             $notoserif, "Georgia", Times New Roman, Times, serif;
+$fixed:             $hack, "Courier New", monospace;
 
 /** COLORS **/
 /* If you set them all here, you can use variables in the rest of your Sass and everything will stay consistent. */
