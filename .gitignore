@@ -42,3 +42,4 @@ flycheck_*.el
 
 # Generated files -- possibly not useful for your project!
 *.html
+assets/stylesheets

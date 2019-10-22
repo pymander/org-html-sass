@@ -1,0 +1,39 @@
+/**
+ * Configurable variables for the Sass templates. This includes colors, fonts, typesetting, and other issues.
+ */
+
+// Default font choices for sans and serif
+$sans-serif:        "Bitstream Vera Sans", Verdana, sans-serif; 
+$serif:             "Georgia", Times New Roman, Times, serif;
+$fixed:             "Courier New", monospace;
+
+// Imported fonts from setup.org
+$alegreya:          "Alegreya SC", $serif;
+
+/** COLORS **/
+/* If you set them all here, you can use variables in the rest of your Sass and everything will stay consistent. */
+$alert-yellow:      #ebe16f;
+$alert-red:         #fbe3e4;
+$alert-green:       #e6efc2;
+$alert-blue:        #d5edf8;
+
+$black:             #000000;
+$white:             #ffffff;
+
+$light-gray:        #f8f9fa;
+$gray:              #eaedf2;
+$meta-gray:         #9fa6b4;
+$tan:               #eceee5;
+$green:             #7dd667;
+$blue:              #2980b9;
+$red:               #ff3333;
+
+$text-color:        #5c6b80;
+$background-color:  $white;
+$ground-color:      $meta-gray;
+
+$link-color:        darken($blue, 10%);
+$link-hover:        darken($link-color, 10%);
+
+$border-color:      $gray;
+$disabled-gray:     #cfcfcf;
