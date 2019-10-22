@@ -111,9 +111,15 @@ pre {
     border: 1pt solid $border-color;
     background-color: $light-gray;
     padding: 5pt;
-    font-family: $fixed;
+    font-family: $hack;
     font-size: 90%;
     overflow:auto;
+}
+code {
+    font-family: $hack;
+    font-size: 90%;
+    hyphens: none;
+    color: darken($text-color, 10%);
 }
 table { border-collapse: collapse; }
 td, th { vertical-align: top; }
