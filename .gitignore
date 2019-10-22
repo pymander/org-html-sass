@@ -39,3 +39,6 @@ flycheck_*.el
 
 # Sass and Compass cache files
 .sass-cache
+
+# Generated files -- possibly not useful for your project!
+*.html
