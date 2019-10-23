@@ -4,6 +4,8 @@
 #+EMAIL: earneson@arnesonium.com
 #+SETUPFILE: include/setup.org
 
+To see this package in action, check out [[https://earneson.keybase.pub/example.html][the example page on my public Keybase.io site]].
+
 * Step 1: Install Compass
 
   Follow the installation directions from [[http://compass-style.org/][the Compass website]]. Note that Compass relies on Ruby, but
@@ -41,13 +43,8 @@
              :base-directory yourwebsite-base-dir
              :base-extension "org"
              :exclude "include"
-             :publishing-directory "PATH/TO/PUBLISHING/DIRECTORY"
+             :publishing-directory yourwebsite-publish-dir
              :publishing-function org-html-publish-to-html
-             :auto-sitemap t
-             :sitemap-filename "sitemap.org"
-             :sitemap-title "Your Website Sitemap"
-             :auto-index t
-             :table-of-contents t
              :recursive t
              :publishing-url "https://yourwebsite.example/")
             ("yourwebsite.static"
@@ -56,7 +53,6 @@
              :include (".htaccess")
              :publishing-function org-publish-attachment
              :publishing-directory yourwebsite-publish-dir
-             :auto-sitemap nil
              :recursive t)
             ("yourwebsite"
              :components ("yourwebsite.example" "yourwebsite.static"))))

@@ -168,6 +168,14 @@ textarea { overflow-x: auto; }
     font-weight:bold; 
 }
 
+img.center {
+    display: block;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
 /* Our logo and menu div. */
 #tm-logo {
    text-align: center;

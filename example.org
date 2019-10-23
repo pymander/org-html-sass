@@ -6,6 +6,19 @@
 
 This file contains example HTML elements for testing.
 
+* Images
+
+  Do you want cool images like this? Go check out [[https://undraw.co/][unDraw]]!
+
+** PNG
+   #+ATTR_HTML: :alt Fill forms :style max-width:45% :class center
+   [[file:images/undraw_fill_forms_yltj.png]]
+
+** SVG
+   #+CAPTION: An example image from unDraw
+   #+ATTR_HTML: :alt Body text :style max-width:45%
+   [[file:images/undraw_body_text_l3ld.svg]]
+
 * Text
 
   This is plain text.
