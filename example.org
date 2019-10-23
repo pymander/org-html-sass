@@ -1,0 +1,144 @@
+#+TITLE: HTML Element Examples
+#+LANGUAGE: en
+#+AUTHOR: Erik L. Arneson
+#+EMAIL: earneson@arnesonium.com
+#+SETUPFILE: include/setup.org
+
+This file contains example HTML elements for testing.
+
+* Text
+
+  This is plain text.
+
+  *This is bold text.*
+
+  /This is italic text./
+
+  _This is underlined text._
+
+  +This is strikethrough text.+
+
+  =This is code text.=
+
+  This is a sentence with [[file:README.org][a hyperlink in it]].
+
+** Block quotes
+
+   What follows is a blockquote. What you are reading now is some sample text so you can view the offset.
+
+   #+begin_quote
+   “I turn my body from the sun. What ho, Tashtego! let me hear thy hammer. Oh! ye three
+   unsurrendered spires of mine; thou uncracked keel; and only god-bullied hull; thou firm deck, and
+   haughty helm, and Pole-pointed prow,—death-glorious ship! must ye then perish, and without me? Am
+   I cut off from the last fond pride of meanest shipwrecked captains? Oh, lonely death on lonely
+   life! Oh, now I feel my topmost greatness lies in my topmost grief. Ho, ho! from all your
+   furthest bounds, pour ye now in, ye bold billows of my whole foregone life, and top this one
+   piled comber of my death! Towards thee I roll, thou all-destroying but unconquering whale; to the
+   last I grapple with thee; from hell’s heart I stab at thee; for hate’s sake I spit my last breath
+   at thee. Sink all coffins and all hearses to one common pool! and since neither can be mine, let
+   me then tow to pieces, while still chasing thee, though tied to thee, thou damned whale! Thus, I
+   give up the spear!”
+   #+end_quote
+
+** Verse
+
+   Now I'm going to quote Shakespeare, because why not?
+
+   #+begin_verse
+   What's he that wishes so?
+   My cousin, Westmorland? No, my fair cousin;
+   If we are mark'd to die, we are enough
+   To do our country loss; and if to live,
+   The fewer men, the greater share of honour.
+   God's will! I pray thee, wish not one man more.
+   By Jove, I am not covetous for gold,
+   Nor care I who doth feed upon my cost;
+   It yearns me not if men my garments wear;
+   Such outward things dwell not in my desires.
+   But if it be a sin to covet honour,
+   I am the most offending soul alive.
+   No, faith, my coz, wish not a man from England.
+   God's peace! I would not lose so great an honour
+   As one man more methinks would share from me
+   For the best hope I have. O, do not wish one more!
+   Rather proclaim it, Westmorland, through my host,
+   That he which hath no stomach to this fight,
+   Let him depart; his passport shall be made,
+   And crowns for convoy put into his purse;
+   We would not die in that man's company
+   That fears his fellowship to die with us.
+   This day is call'd the feast of Crispian.
+   He that outlives this day, and comes safe home,
+   Will stand a tip-toe when this day is nam'd,
+   And rouse him at the name of Crispian.
+   He that shall live this day, and see old age,
+   Will yearly on the vigil feast his neighbours,
+   And say "To-morrow is Saint Crispian."
+   Then will he strip his sleeve and show his scars,
+   And say "These wounds I had on Crispin's day."
+   Old men forget; yet all shall be forgot,
+   But he'll remember, with advantages,
+   What feats he did that day. Then shall our names,
+   Familiar in his mouth as household words—
+   Harry the King, Bedford and Exeter,
+   Warwick and Talbot, Salisbury and Gloucester—
+   Be in their flowing cups freshly rememb'red.
+   This story shall the good man teach his son;
+   And Crispin Crispian shall ne'er go by,
+   From this day to the ending of the world,
+   But we in it shall be rememberèd—
+   We few, we happy few, we band of brothers;
+   For he to-day that sheds his blood with me
+   Shall be my brother; be he ne'er so vile,
+   This day shall gentle his condition;
+   And gentlemen in England now a-bed
+   Shall think themselves accurs'd they were not here,
+   And hold their manhoods cheap whiles any speaks
+   That fought with us upon Saint Crispin's day. 
+   #+end_verse
+
+* Tables
+** Wide Tables
+
+   Most data in this table is from [[https://en.wikipedia.org/wiki/List_of_Solar_System_objects_by_size][List of Solar System objects by size]] on Wikipedia.
+
+   | Solar System Object | Radius (km)          | Mass (10^21 kg) | Gravity (m/s^2) | Volume (10^9 km^3) | Avg. Distance from Sun (km)[fn:1] |
+   |---------------------+----------------------+-----------------+-----------------+--------------------+-----------------------------------|
+   | The Sun             | 696342±65            | 1,988,550,000   |           274.0 | 1,414,300,000      | 0                                 |
+   | Jupiter             | 69911±6              | 1,898,600       |           24.79 | 1,431,280          | 778,340,821                       |
+   | Saturn              | 58232±6 (w/o rings)  | 568,460         |          10.445 | 827,130            | 1,426,666,422                     |
+   | Uranus              | 25362±7              | 86,832          |            8.69 | 68,340             | 2,870,658,186                     |
+   | Neptune             | 24622±19             | 102,430         |           11.15 | 62,540             | 4,498,396,441                     |
+   | Earth               | 6371.0±0.01          | 5,973.6         |         9.80655 | 1,083.21           | 149,598,262                       |
+   | Venus               | 6051.8±1.0 (w/o gas) | 4,868.5         |           8.872 | 928.43             | 108,209,475                       |
+   | Mars                | 3389.5±0.2           | 641.85          |           3.721 | 163.18             | 227,943,824                       |
+   | Mercury             | 2439.7±1.0           | 330.2           |             3.7 | 60.83              | 57,909,227                        |
+
+* Source Code
+** Basic Code
+
+   #+begin_src javascript
+     document.addEventListener("DOMContentLoaded", function(event) {
+       // Enable side-scrolling tables on mobile.
+       document.querySelectorAll('table').forEach(function (e) {
+         var div = document.createElement('div');
+
+         div.className += 'table-auto-wrap';
+         e.insertAdjacentElement('beforebegin', div);
+         div.appendChild(e);
+       });
+     });
+   #+end_src
+** Wide Source Code
+
+   #+begin_src javascript
+     document.addEventListener("DOMContentLoaded", function(event) {
+       // Enable side-scrolling tables on mobile.
+       document.querySelectorAll('table').forEach(function (e) { var div = document.createElement('div'); div.className += 'table-auto-wrap'; e.insertAdjacentElement('beforebegin', div); div.appendChild(e); });
+     });
+   #+end_src
+
+* Footnotes
+
+[fn:1] Taken from https://space-facts.com/planet-orbits/ 
+

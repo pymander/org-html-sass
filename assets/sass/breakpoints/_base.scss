@@ -106,7 +106,13 @@ p.creator {
 .target { }
 .timestamp { color: $gray; }
 .timestamp-kwd { color: $gray; }
-p.verse { margin-left: 3% }
+p.verse {
+    margin-left: 2em;
+    font-style: italic;
+}
+blockquote {
+    margin-left: 2em;
+}
 pre {
     border: 1pt solid $border-color;
     background-color: $light-gray;
@@ -115,14 +121,31 @@ pre {
     font-size: 90%;
     overflow:auto;
 }
+pre.src {
+    padding: {
+        top: 2px;
+    }
+    overflow-x: auto;
+}
 code {
     font-family: $fixed;
     font-size: 90%;
     hyphens: none;
     color: darken($text-color, 10%);
 }
-table { border-collapse: collapse; }
-td, th { vertical-align: top; }
+table {
+    border-collapse: collapse;
+}
+.table-auto-wrap {
+    overflow-x: auto;
+}
+td, th {
+    vertical-align: top;
+    padding: {
+        left: 5px;
+        right: 5px;
+    }
+}
 dt { font-weight: bold; }
 div.figure { padding: 0.5em; }
 div.figure p { text-align: center; }
