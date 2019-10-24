@@ -21,7 +21,7 @@ This file contains example HTML elements for testing.
 
 * Text
 
-  This is plain text.
+  This is plain text.[fn:1]
 
   *This is bold text.*
 
@@ -115,7 +115,7 @@ This file contains example HTML elements for testing.
 
    Most data in this table is from [[https://en.wikipedia.org/wiki/List_of_Solar_System_objects_by_size][List of Solar System objects by size]] on Wikipedia.
 
-   | Solar System Object | Radius (km)                        | Mass (10^21@@html:&nbsp;@@kg) | Gravity (m/s^2) | Volume (10^9@@html:&nbsp;@@km^3) | Avg. Distance from Sun (km)[fn:1] |
+   | Solar System Object | Radius (km)                        | Mass (10^21@@html:&nbsp;@@kg) | Gravity (m/s^2) | Volume (10^9@@html:&nbsp;@@km^3) | Avg. Distance from Sun (km)[fn:2] |
    |---------------------+------------------------------------+-------------------------------+-----------------+----------------------------------+-----------------------------------|
    | /                   | <                                  |                               |               > | <                                | >                                 |
    |                     | <20>                               | <13>                          |             <7> | <13>                             | <13>                              |
@@ -155,5 +155,6 @@ This file contains example HTML elements for testing.
 
 * Footnotes
 
-[fn:1] Taken from https://space-facts.com/planet-orbits/ 
+[fn:1] This is a sample footnote.
 
+[fn:2] Taken from https://space-facts.com/planet-orbits/
