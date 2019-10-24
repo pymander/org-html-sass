@@ -139,6 +139,30 @@ table {
 .table-auto-wrap {
     overflow-x: auto;
 }
+
+thead {
+    tr {
+        background-color: darken($background-color, 5%);
+        color: darken($text-color, 5%);
+    }
+    th {
+        hyphens: manual;
+    }
+}
+
+tbody {
+    tr {
+        &:nth-child(odd) {
+            background-color: lighten($background-color, 10%);
+        }
+
+        &:nth-child(even) {
+            background-color: darken($background-color, 10%);
+            color: darken($text-color, 10%);
+        }
+    }
+}
+
 td, th {
     vertical-align: top;
     padding: {
@@ -146,6 +170,7 @@ td, th {
         right: 5px;
     }
 }
+
 dt { font-weight: bold; }
 div.figure { padding: 0.5em; }
 div.figure p { text-align: center; }
