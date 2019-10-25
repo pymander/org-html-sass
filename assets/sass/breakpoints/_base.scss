@@ -37,12 +37,14 @@ div#content {
    }
 }
 
-div {
-   p:first-child {
-      margin-top: 0.125em;
-   }
-}
+// div.org-row {
+//     @include row()
+// }
 
+.org-row div.outline-text-1, .org-row div.outline-text-2, .org-row div.outline-text-3 {
+    /* Comment this out if you're not using a grid. */
+    @include row()
+}
 
 /* Fancy underlines. */
 h2 {
