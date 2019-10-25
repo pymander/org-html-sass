@@ -138,6 +138,13 @@ code {
 textarea {
     overflow-x: auto;
     font-family: $fixed;
+    hyphens: none;
+    white-space: pre;
+    
+     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 /* Tables and all the junk that goes with them. */
@@ -182,7 +189,6 @@ td, th {
 dt { font-weight: bold; }
 div.figure { padding: 0.5em; }
 div.figure p { text-align: center; }
-textarea { overflow-x: auto; }
 .linenr { font-size:smaller }
 .code-highlighted {
     background-color: $alert-yellow;
