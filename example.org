@@ -153,6 +153,22 @@ This file contains example HTML elements for testing.
      });
    #+end_src
 
+** Source Code Textarea
+
+   #+ATTR_HTML: :textarea t :width 80
+   #+begin_src javascript
+     document.addEventListener("DOMContentLoaded", function(event) {
+       // Enable side-scrolling tables on mobile.
+       document.querySelectorAll('table').forEach(function (e) {
+         var div = document.createElement('div');
+
+         div.className += 'table-auto-wrap';
+         e.insertAdjacentElement('beforebegin', div);
+         div.appendChild(e);
+       });
+     });
+   #+end_src
+
 * Footnotes
 
 [fn:1] This is a sample footnote.

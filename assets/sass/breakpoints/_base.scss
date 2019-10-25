@@ -121,6 +121,8 @@ pre {
     font-size: 90%;
     overflow:auto;
 }
+
+/* Formatting source code -- always a fun challenge! */
 pre.src {
     padding: {
         top: 2px;
@@ -133,6 +135,12 @@ code {
     hyphens: none;
     color: darken($text-color, 10%);
 }
+textarea {
+    overflow-x: auto;
+    font-family: $fixed;
+}
+
+/* Tables and all the junk that goes with them. */
 table {
     border-collapse: collapse;
 }
@@ -188,7 +196,7 @@ textarea { overflow-x: auto; }
     white-space:nowrap;
 }
 .org-info-js_search-highlight { 
-    background-color: #alert-yellow;
+    background-color: $alert-yellow;
     color: $black;
     font-weight:bold; 
 }
