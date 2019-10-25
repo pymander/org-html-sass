@@ -1,0 +1,15 @@
+img.floatleft, img.floatright {
+    display: inline-block;
+    max-width: 45%;
+    margin: 0px;
+}
+
+img.floatleft {
+    float: left;
+    padding-right: 1%;
+}
+
+img.floatright {
+    float: right;
+    padding-left: 1%;
+}

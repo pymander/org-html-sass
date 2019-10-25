@@ -201,8 +201,10 @@ textarea { overflow-x: auto; }
     font-weight:bold; 
 }
 
-img.center {
+/* Formatting images to keep them responsive. */
+img.center, img.floatleft, img.floatright {
     display: block;
+    max-width: 85%;
     margin: {
         left: auto;
         right: auto;

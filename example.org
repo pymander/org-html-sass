@@ -14,6 +14,36 @@ This file contains example HTML elements for testing.
    #+ATTR_HTML: :alt Fill forms :style max-width:45% :class center
    [[file:images/undraw_fill_forms_yltj.png]]
 
+   #+ATTR_HTML: :alt Fill forms :class floatleft
+   [[file:images/undraw_fill_forms_yltj.png]]
+
+   Here is an image floated left with text wrapped around it. This test is for responsive image
+   formatting. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in ornare nisl. Sed
+   blandit odio purus, id imperdiet elit ultricies ut. Cras vel tempus orci. Mauris eget eros ac
+   diam tempus blandit. Praesent mattis diam non libero finibus, non convallis nisl
+   aliquam. Maecenas volutpat, leo et ultricies vehicula, turpis augue ultrices diam, nec facilisis
+   lectus lacus eu tortor. Nunc tempor eros sed felis vulputate elementum. Proin eleifend porttitor
+   augue quis lacinia. Aliquam erat volutpat. Praesent iaculis justo accumsan lacus dignissim
+   dictum. Aenean interdum lorem in libero mollis, at dignissim lorem pellentesque. Integer ligula
+   ex, varius nec mauris id, consectetur feugiat neque. Maecenas ut est augue. Suspendisse tempus
+   odio vel massa tristique, eget hendrerit sapien tempor. Etiam congue nibh a nibh egestas
+   sollicitudin.
+
+   #+ATTR_HTML: :alt Fill forms :class floatright
+   [[file:images/undraw_fill_forms_yltj.png]]
+
+   Here is an image floated right with text wrapped around it. We still want this to look good for
+   responsive images. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in ornare
+   nisl. Sed blandit odio purus, id imperdiet elit ultricies ut. Cras vel tempus orci. Mauris eget
+   eros ac diam tempus blandit. Praesent mattis diam non libero finibus, non convallis nisl
+   aliquam. Maecenas volutpat, leo et ultricies vehicula, turpis augue ultrices diam, nec facilisis
+   lectus lacus eu tortor. Nunc tempor eros sed felis vulputate elementum. Proin eleifend porttitor
+   augue quis lacinia. Aliquam erat volutpat. Praesent iaculis justo accumsan lacus dignissim
+   dictum. Aenean interdum lorem in libero mollis, at dignissim lorem pellentesque. Integer ligula
+   ex, varius nec mauris id, consectetur feugiat neque. Maecenas ut est augue. Suspendisse tempus
+   odio vel massa tristique, eget hendrerit sapien tempor. Etiam congue nibh a nibh egestas
+   sollicitudin.
+
 ** SVG
    #+CAPTION: An example image from unDraw
    #+ATTR_HTML: :alt Body text :style max-width:45%
@@ -34,6 +64,11 @@ This file contains example HTML elements for testing.
   =This is code text.=
 
   This is a sentence with [[file:README.org][a hyperlink in it]].
+
+** Links
+
+   #+ATTR_HTML: :title The Org mode homepage :style color:red;
+   Here we try something with a complicated [[https://orgmode.org][inline link]].
 
 ** Block quotes
 
@@ -168,6 +203,22 @@ This file contains example HTML elements for testing.
        });
      });
    #+end_src
+
+* Math
+
+  The following example is taken from the Org Manual.
+
+  \begin{equation}
+  x=\sqrt{b}
+  \end{equation}
+
+  Here's something more complicated.
+
+  \begin{align*}
+  S(\omega) 
+  &= \frac{\alpha g^2}{\omega^5} e^{[ -0.74\bigl\{\frac{\omega U_\omega 19.5}{g}\bigr\}^{\!-4}\,]} \\
+  &= \frac{\alpha g^2}{\omega^5} \exp\Bigl[ -0.74\Bigl\{\frac{\omega U_\omega 19.5}{g}\Bigr\}^{\!-4}\,\Bigr] 
+  \end{align*}
 
 * Footnotes
 
