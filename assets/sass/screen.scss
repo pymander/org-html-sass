@@ -6,7 +6,10 @@
 // @import "compass/reset";
 
 // Basic setup and variables in variables.scss
-@import "variables";
+@import "include/variables";
+
+// Basic org-mode styling, imported from v9.
+@import "include/org";
 
 /*********************
 BASE (MOBILE) SIZE

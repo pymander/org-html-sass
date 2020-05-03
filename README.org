@@ -24,7 +24,7 @@ To see this package in action, check out [[https://earneson.keybase.pub/example.
 
   1. Open [[file:include/setup.org]] and set some reasonable defaults. In particular, note the custom
      fonts being loaded.
-  2. Edit [[file:assets/sass/variables.scss]] to set up your colors, basic fonts, and other elements.
+  2. Edit [[file:assets/sass/include/_variables.scss]] to set up your colors, basic fonts, and other elements.
   3. Edit [[file:assets/sass/breakpoints/_base.scss]] to configure the basic CSS building blocks for
      your website.
 

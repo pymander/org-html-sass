@@ -3,12 +3,12 @@
  */
 
 // Imported fonts from setup.org
-$notoserif:          "Noto Serif TC";
+$notoserif:         "Noto Serif TC";
 $hack:              "Hack";
 
 // Default font choices for sans and serif
 $sans-serif:        "Bitstream Vera Sans", Verdana, sans-serif; 
-$serif:             $notoserif, "Georgia", Times New Roman, Times, serif;
+$serif:             $notoserif, "Georgia", "Times New Roman", Times, serif;
 $fixed:             $hack, "Courier New", monospace;
 
 /** COLORS **/
@@ -29,7 +29,7 @@ $green:             #7dd667;
 $blue:              #2980b9;
 $red:               #ff3333;
 
-$text-color:        #5c6b80;
+$text-color:        lighten($black, 10%);
 $background-color:  $light-gray;
 $ground-color:      $meta-gray;
 
