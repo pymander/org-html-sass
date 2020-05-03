@@ -6,6 +6,33 @@
 
 This file contains example HTML elements for testing.
 
+* Headers without text. Level 1
+** And here's level 2
+*** Oh jumping jiminy it's level 3
+**** Sweet Christmas! Level 4
+***** By the sweaty hounds of Hamburg! Level 5
+****** I am not sure level 6 is even a real thing.
+
+* Headers with text. Level 1
+
+  Ignore this junk.
+
+** Level 2
+
+   Wait is this important.
+
+*** Level 3
+    
+    We need to talk about your attachment to outlines.
+
+**** Level 4
+
+     No really this is getting serious.
+
+***** Level 5
+
+      What needs to be five levels deep? For realsies.
+
 * Images
 
   Do you want cool images like this? Go check out [[https://undraw.co/][unDraw]]!
